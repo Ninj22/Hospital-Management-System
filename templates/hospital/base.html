@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management</title>
+</head>
+<body>
+    <!-- Other content -->
+
+    <!-- Update the logout link -->
+    <form id="logout-form" action="{% url 'logout' %}" method="post" style="display: none;">
+        {% csrf_token %}
+        <button type="submit">Logout</button>
+    </form>
+    <a href="#" onclick="document.getElementById('logout-form').submit();">Logout</a>
+
+    <!-- Other content -->
+</body>
+</html>
